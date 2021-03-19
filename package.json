@@ -3,11 +3,17 @@
   "version": "0.0.1",
   "description": "",
   "devDependencies": {
+    "@sap/ui5-builder-webide-extension": "1.0.x",
     "@ui5/cli": "1.13.0",
-    "@sap/ui5-builder-webide-extension": "1.0.x"
+    "karma": "^6.2.0",
+    "karma-chrome-launcher": "latest",
+    "karma-coverage": "^2.0.3",
+    "karma-junit-reporter": "^2.0.1",
+    "karma-ui5": "latest"
   },
   "scripts": {
-    "build": "ui5 build --clean-dest --include-task=generateManifestBundle generateCachebusterInfo"
+    "build": "ui5 build --clean-dest --include-task=generateManifestBundle generateCachebusterInfo",
+    "karma": "karma start"
   },
   "ui5": {
     "dependencies": [
